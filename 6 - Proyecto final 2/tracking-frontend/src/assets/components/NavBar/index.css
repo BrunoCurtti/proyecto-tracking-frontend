@@ -1,0 +1,14 @@
+.nav__conteiner{
+    width: 100vw;
+    height: 20vh;
+    margin-left: 5rem;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35vw;
+}
+
+.nav__logo{
+    width: 60px;
+}
