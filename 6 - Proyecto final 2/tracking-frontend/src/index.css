@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   background-image:url("rick-bkgr.jpg");
-  opacity: 0.9;
+  background-size: contain;
+  opacity: 0.8;
+  
 }
