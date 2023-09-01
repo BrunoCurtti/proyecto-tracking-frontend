@@ -14,10 +14,17 @@ function Figurita({
   const [laTengo, setLaTengo] = useState(la_tengo);
   const [cant, setCant] = useState(cantidad);
 
-
   const handleLaTengo = (id) => {
-    setLaTengo(!laTengo);
-    updateFigurita(id, cant, !laTengo);
+    const newLaTengo = !laTengo;
+    let newCant = cant + 1;
+    if (newLaTengo === false) {
+      newCant = 0;
+    }
+
+    setCant(newCant);
+
+    setLaTengo(newLaTengo);
+    updateFigurita(id, newCant, newLaTengo);
   };
 
   const sumarUno = (id) => {
